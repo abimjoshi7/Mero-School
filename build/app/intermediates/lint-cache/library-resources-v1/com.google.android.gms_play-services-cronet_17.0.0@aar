@@ -1,0 +1,1 @@
+http://schemas.android.com/apk/res-auto;com.google.android.gms:play-services-cronet:17.0.0@aar;/home/abim/.gradle/caches/transforms-3/9b1cebd63e78637cf6287ed7e489f33c/transformed/jetified-play-services-cronet-17.0.0/res/values/values.xml,+string:CronetProviderClassName,0,V"com.google.android.gms.net.PlayServicesCronetProvider";

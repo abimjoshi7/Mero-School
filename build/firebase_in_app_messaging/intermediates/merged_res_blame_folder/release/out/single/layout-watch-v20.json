@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/firebase_in_app_messaging/intermediates/merged_res/release/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/ce2e5ab13362051b59db9c36f12575c9/transformed/appcompat-1.1.0/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/firebase_in_app_messaging/intermediates/merged_res/release/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/ce2e5ab13362051b59db9c36f12575c9/transformed/appcompat-1.1.0/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    }
+]

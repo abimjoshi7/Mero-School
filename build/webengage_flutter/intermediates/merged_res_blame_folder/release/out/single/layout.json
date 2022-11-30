@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/custom_dialog.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/layout/custom_dialog.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/big_text.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/layout/big_text.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/notification_template_part_chronometer.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/push_base.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/layout/push_base.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/carousel_v1.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/layout/carousel_v1.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/big_picture.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/layout/big_picture.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/autocarousel_item.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/layout/autocarousel_item.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/rating_v1.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/layout/rating_v1.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/autocarousel.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/layout/autocarousel.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/notification_template_part_time.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/layout/push_action_list.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/layout/push_action_list.xml"
+    }
+]

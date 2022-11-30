@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/abim/Downloads/mero-school/build/better_player/intermediates/incremental/mergeReleaseResources/merged.dir/values-v23/values-v23.xml",
+            "map": [
+                {
+                    "source": "/home/abim/.gradle/caches/transforms-3/9018e7034554373dbb233d85178ffe50/transformed/work-runtime-2.7.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/abim/Downloads/mero-school/build/better_player/intermediates/merged_res/release/values-v23/values-v23.xml",
+            "map": [
+                {
+                    "source": "/home/abim/.gradle/caches/transforms-3/9018e7034554373dbb233d85178ffe50/transformed/work-runtime-2.7.0/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
+                    }
+                }
+            ]
+        }
+    ]
+}

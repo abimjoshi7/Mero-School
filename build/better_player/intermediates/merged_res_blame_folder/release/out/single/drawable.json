@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/better_player/intermediates/merged_res/release/drawable/exo_rounded_rectangle.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8725d5e9cb336f640b7d79a7c63debc1/transformed/jetified-exoplayer-ui-2.15.1/res/drawable/exo_rounded_rectangle.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/better_player/intermediates/merged_res/release/drawable/notification_tile_bg.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/better_player/intermediates/merged_res/release/drawable/notification_bg.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/better_player/intermediates/merged_res/release/drawable/notification_icon_background.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/better_player/intermediates/merged_res/release/drawable/notification_bg_low.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/drawable/notification_bg_low.xml"
+    }
+]

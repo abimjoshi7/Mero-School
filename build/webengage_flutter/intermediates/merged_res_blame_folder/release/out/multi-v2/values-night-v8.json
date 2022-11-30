@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,98,144,186,234,282",
+                        "endColumns": "42,45,41,47,47,42",
+                        "endOffsets": "93,139,181,229,277,320"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/values-night-v8/values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,98,144,186,234,282",
+                        "endColumns": "42,45,41,47,47,42",
+                        "endOffsets": "93,139,181,229,277,320"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/anim/fade_in.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/anim/fade_in.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/webengage_flutter/intermediates/merged_res/release/anim/fade_out.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/res/anim/fade_out.xml"
+    }
+]

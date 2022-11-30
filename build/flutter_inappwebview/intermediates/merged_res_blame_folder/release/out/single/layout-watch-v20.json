@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_res/release/layout-watch-v20/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/2c32bebd79c53772459fa726cae096de/transformed/appcompat-1.4.1/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_res/release/layout-watch-v20/abc_alert_dialog_title_material.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/2c32bebd79c53772459fa726cae096de/transformed/appcompat-1.4.1/res/layout-watch-v20/abc_alert_dialog_title_material.xml"
+    }
+]

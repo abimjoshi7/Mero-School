@@ -1,0 +1,11 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aboutyou.dart_packages.sign_in_with_apple" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="16"
+6-->/home/abim/snap/flutter/common/flutter/.pub-cache/git/dart_packages-7074976ae1f251e71ce917c9b4427c6dd6c2958b/packages/sign_in_with_apple/android/src/main/AndroidManifest.xml
+7        android:targetSdkVersion="16" />
+7-->/home/abim/snap/flutter/common/flutter/.pub-cache/git/dart_packages-7074976ae1f251e71ce917c9b4427c6dd6c2958b/packages/sign_in_with_apple/android/src/main/AndroidManifest.xml
+8
+9</manifest>

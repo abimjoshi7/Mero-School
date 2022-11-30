@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_res/release/layout-v21/notification_action.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/1cb00c82fc30b16d8caa07c671c2041e/transformed/core-1.8.0/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_res/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/1cb00c82fc30b16d8caa07c671c2041e/transformed/core-1.8.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_res/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/1cb00c82fc30b16d8caa07c671c2041e/transformed/core-1.8.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_res/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/1cb00c82fc30b16d8caa07c671c2041e/transformed/core-1.8.0/res/layout-v21/notification_action_tombstone.xml"
+    }
+]

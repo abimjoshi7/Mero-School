@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEFFFF"
+    android:titleTextColor="#424242"
+    android:elevation="2dp">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:background="@drawable/bg_touch"
+        android:drawableLeft="@drawable/ic_close"
+        android:visibility="visible"
+        android:padding="8dp"
+        android:onClick="handleBackButton"/>
+
+    <ImageView
+        android:id="@+id/applicationLogo"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:scaleType="fitCenter"
+        android:transitionName="logs"
+        android:src="@drawable/mero_school_logo" />
+
+
+</androidx.appcompat.widget.Toolbar>

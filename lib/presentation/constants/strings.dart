@@ -1,0 +1,124 @@
+const app_name = 'Mero School';
+const course = 'Course';
+const my_course = 'My Course';
+const wish_list = 'Wishlist';
+const account = 'Account';
+const more = 'More';
+const mero_school_login = "$app_name Login";
+const mero_school_register = "$app_name Register";
+const entrance_phone_number = "Phone Number";
+const otp_number = "OTP Number";
+const textpassword = "Password";
+const sign_in = "Sign In";
+const sign_up = "Sign Up";
+const login = "Login";
+const register = "Register";
+const google = "Google";
+const facebook = "Facebook";
+const need_create_account = "Need to create account? ";
+const already_have_account = "Already have account? ";
+const continue_with = "Or";
+const forget_password = "Forgot password? ";
+const already_got_otp = "Already got OTP? ";
+const reset = "RESET";
+const enter_otp = "ENTER OTP";
+const textchange_password = "Change Password";
+const already_got_otp_to_reset = "Already Got OTP to reset";
+const got_coupon_code = "Got A Coupon Code";
+const retry = "Retry";
+const empty = "";
+const all = "all";
+const affiliate_registration = 'Become an affililate';
+const affiliate_registration_form = 'Affiliate Registration Form';
+const affiliate_dashboard_form = 'Affiliate Dashboard';
+const coupon_request_form = 'Coupon Request';
+
+//Preference string list
+const language = "language";
+const systemName = "systemName";
+const systemTitle = "systemTitle";
+const systemEmail = "systemEmail";
+const address = "address";
+const phone = "phone";
+const phone_alternate = "alternate_phone";
+const youtubeApiKey = "youtubeApiKey";
+const vimeoApiKey = "vimeoApiKey";
+const slogan = "slogan";
+const version = "version";
+const thumbnail = "thumbnail";
+const favicon = "favicon";
+const description = "description";
+const youtubeLink =
+    'https://www.youtube.com/watch?v=Pvtey3o0yhM&list=PLNYBpc-m7qEr875BwXbfvjGyiEc5nS3nW';
+
+const hidePaymentKey = "hide_payment_key";
+const hidePayment = "hide_payment";
+const hideSGIos = "hide_smart_gateway";
+const hideSGAndroid = "hide_smart_gateway_andriod";
+const hideBankIos = "hide_bank_payement";
+const hideBankAndroid = "hide_bank_deposite_payment_android";
+const hideNcellIos = "hide_ncell_payment_ios";
+const hideNcellAndroid = "hide_ncell_payment_android";
+
+const hideApplePayIos = "hide_apple_payment_ios";
+const hideAffiliate = "hide_become_an_affiliate";
+const hidePayText = "how_to_pay_text";
+const youtube = "how_to_pay_link";
+const OG_URL = "og_url";
+const affiliate_status = 'affiliate-status';
+const affiliate_message = 'affiliate-message';
+const user_id = "user_id";
+const first_name = 'first_name';
+const user_email = 'email';
+const phone_number = "phone_number";
+const profile_completed_status = "profile_completed_status";
+const role = "role";
+const validity = "validity";
+const token = "user_token";
+const bypass = "bypass_cache";
+const payment_method = "payment_method";
+const user_token = "user_token";
+const video_extension = '/master.m3u8';
+const categoryList = 'category_list';
+const last_name = 'last_name';
+const youtube_channel = 'youtube_channel';
+const website = 'website';
+const reason_promote = 'reason_promote';
+const password = 'password';
+const twitter = 'twitter';
+const linkedin = 'linkedin';
+const biography = 'biography';
+const image_profile = 'image_profile';
+const login_via = 'login_via';
+
+const fcm_token = "fcm_token";
+
+const STR_ENROLL = "enroll";
+const STR_ENROLLED = "enrolled";
+const STR_PURCHASED = "purchased";
+const STR_BUY_NOW = "buy now";
+const STR_EXPIRED = "expired";
+
+//firebase analytics
+const JOIN_GROUP = "join_group";
+const GROUP_ID = "group_id";
+const ITEM_NAME = "item_name";
+const SIGN_UP = "sign_up";
+const METHOD = "method";
+const LOGIN = "login";
+const REMOVE_FROM_CART = "remove_from_cart";
+const ITEM_ID = "item_id";
+const ITEM_CATEGORY = "item_category";
+const PRICE = "price";
+const VALUE = "value";
+const ADD_TO_CART = "add_to_cart";
+const ADD_TO_WISHLIST = "add_to_wishlist";
+const SEARCH = "search";
+const SEARCH_TERM = "search_term";
+const SHARE = "share";
+const CONTENT_TYPE = "content_type";
+const PAYMENT_TYPE = "payment_type";
+const LEVEL = "level";
+
+const user_placeholder =
+    "https://mero.school/uploads/user_image/placeholder.png";

@@ -1,0 +1,7 @@
+# Please add these rules to your existing keep rules in order to suppress warnings.
+# This is generated automatically by the Android Gradle plugin.
+-dontwarn com.amazon.android.Kiwi
+-dontwarn com.amazon.android.framework.task.command.AbstractCommandTask
+-dontwarn com.amazon.android.framework.util.KiwiLogger
+-dontwarn com.amazon.android.licensing.LicenseFailurePromptContentMapper
+-dontwarn com.google.android.exoplayer2.source.rtsp.RtspMessageChannel$RtspMessageBuilder$ReadingState

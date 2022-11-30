@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/google_sign_in_android/intermediates/merged_res/release/color/common_google_signin_btn_tint.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/e589c6a9050c8ecb8b8a2699955cfaef/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_tint.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/google_sign_in_android/intermediates/merged_res/release/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/e589c6a9050c8ecb8b8a2699955cfaef/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/google_sign_in_android/intermediates/merged_res/release/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/e589c6a9050c8ecb8b8a2699955cfaef/transformed/jetified-play-services-base-18.0.1/res/color/common_google_signin_btn_text_dark.xml"
+    }
+]

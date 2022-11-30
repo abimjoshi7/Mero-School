@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_res/release/xml/image_share_filepaths.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/ea5295d0d3afbca38791f6c7b161a2f4/transformed/browser-1.4.0/res/xml/image_share_filepaths.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_res/release/xml/provider_paths.xml",
+        "source": "/home/abim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_inappwebview-5.4.3+7/android/src/main/res/xml/provider_paths.xml"
+    }
+]

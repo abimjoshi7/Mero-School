@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mero School</string>
+    <string name="facebook_app_id">388933218744606</string>
+    <string name="facebook_client_token">7127faff10eb47f00251fa341f2a200b</string>    
+    <string name="fb_login_protocol_scheme">fb388933218744606</string>
+    <string name="track_selection_title">Select tracks</string>
+    <string name="error_cleartext_not_permitted">Cleartext HTTP traffic not permitted. See https://exoplayer.dev/issues/cleartext-not-permitted</string>
+    <string name="error_generic">Playback failed</string>
+    <string name="error_drm_unsupported_before_api_18">DRM content not supported on API levels below 18</string>
+    <string name="error_drm_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="error_querying_decoders">Unable to query device decoders</string>
+    <string name="error_unsupported_video">Media includes video tracks, but none are playable by this device</string>
+
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+
+    <string name="download_start_error">Failed to start download</string>
+    <string name="download_live_unsupported">This demo app does not support downloading live content</string>
+
+    <string name="download_start_error_offline_license">Failed to obtain offline license</string>
+    <string name="notifications">Notifications</string>
+    <string name="tempory_player_token_expired_please_refresh_the_player">: Temporary player Token Expired. Please Refresh the Player.</string>
+
+</resources>

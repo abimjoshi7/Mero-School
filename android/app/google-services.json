@@ -1,0 +1,176 @@
+{
+  "project_info": {
+    "project_number": "534628131084",
+    "project_id": "mero-school-nepal",
+    "storage_bucket": "mero-school-nepal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534628131084:android:bbc40618ff94f51664e929",
+        "android_client_info": {
+          "package_name": "school.mero.lms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534628131084-3gqkjk6r7ruv6q70gqeqdm7gm6tguv4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "46080848b1ccdc9ad812a9935cca58d1da142c30"
+          }
+        },
+        {
+          "client_id": "534628131084-96fmqnkmrmceo3esn4b8ofq6fiktur62.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "254fcee90d373a45b7f8111eb7231b05745532b6"
+          }
+        },
+        {
+          "client_id": "534628131084-aipd50papsma3sr4q8f5g8ns4u5lr22v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "08881dfe0e084eef9afbc5439d9e6e59c7508e66"
+          }
+        },
+        {
+          "client_id": "534628131084-c2c7vdiqs71dogea8vr43fo8l4ov9pu5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "1b11369c3d001dad34a1869bc7ee5a5434a97c25"
+          }
+        },
+        {
+          "client_id": "534628131084-e3qfcnsd8tn8ijeiauiedrndfa2l8308.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "0669770d0405907b2bd5f698262585f094b071af"
+          }
+        },
+        {
+          "client_id": "534628131084-ivupl9r07sgbcnigo0en6fk6in20b1sh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "429edd0c1ebd09130a848e05c475d2eadc86f298"
+          }
+        },
+        {
+          "client_id": "534628131084-kajra1lleoh9t7jbplnuc8b8mp28amn6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "acd8d91bace1b4ec39a58983b2374d046bddab0f"
+          }
+        },
+        {
+          "client_id": "534628131084-sc5rirtsmm0v72k1fq92vrvlavev35fg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "932438e8983375e04b97af38f470db2da51954cb"
+          }
+        },
+        {
+          "client_id": "534628131084-sh345k113csjfku5j67c5ol4tct7jmm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.lms",
+            "certificate_hash": "b9f0ee65b969dcd4083051be5f354115b5ef582b"
+          }
+        },
+        {
+          "client_id": "534628131084-3pn9r8vi3g8qbhje2qd37b83ohn0b3g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXMi0bTJItLLynrIiRs8A_ydQqEmgEYYA"
+        },
+        {
+          "current_key": "AIzaSyDEtNMFWL5YDMTqPb_Imneo8Es57_7uTFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534628131084-3pn9r8vi3g8qbhje2qd37b83ohn0b3g6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "534628131084-1i74h3gqrvdrueukjtcjk742gi1cg5po.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "school.mero.lms"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534628131084:android:b8f15cdd523c270164e929",
+        "android_client_info": {
+          "package_name": "school.mero.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "534628131084-2v08md4m8tofvjrr1cfnl065cve5cveg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.stage",
+            "certificate_hash": "429edd0c1ebd09130a848e05c475d2eadc86f298"
+          }
+        },
+        {
+          "client_id": "534628131084-givbcf0g864jl37ikffqvot5okcfe4km.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "school.mero.stage",
+            "certificate_hash": "254fcee90d373a45b7f8111eb7231b05745532b6"
+          }
+        },
+        {
+          "client_id": "534628131084-3pn9r8vi3g8qbhje2qd37b83ohn0b3g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXMi0bTJItLLynrIiRs8A_ydQqEmgEYYA"
+        },
+        {
+          "current_key": "AIzaSyDEtNMFWL5YDMTqPb_Imneo8Es57_7uTFo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "534628131084-3pn9r8vi3g8qbhje2qd37b83ohn0b3g6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "534628131084-1i74h3gqrvdrueukjtcjk742gi1cg5po.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "school.mero.lms"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

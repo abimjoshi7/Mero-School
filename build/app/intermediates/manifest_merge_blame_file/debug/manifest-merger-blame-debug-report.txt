@@ -1,0 +1,1416 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="school.mero.lms"
+4    android:versionCode="121"
+5    android:versionName="0.72.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="32" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:32:5-67
+14-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:32:22-64
+15    <!--
+16         io.flutter.app.FlutterApplication is an android.app.Application that
+17         calls FlutterMain.startInitialization(this); in its onCreate method.
+18         In most cases you can leave this as-is, but you if you want to provide
+19         additional functionality it is fine to subclass or reimplement
+20         FlutterApplication and put your custom class here.
+21    -->
+22    <queries>
+22-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:11:5-30:11
+23        <provider android:authorities="com.facebook.katana.provider.PlatformProvider" />
+23-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:12:9-89
+23-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:12:19-86
+24
+25        <!-- If your app opens https URLs -->
+26        <intent>
+26-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:15:3-18:12
+27            <action android:name="android.intent.action.VIEW" />
+27-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:5-57
+27-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:13-54
+28
+29            <data android:scheme="https" />
+29-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+29-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+30        </intent>
+31        <!-- If your app makes calls -->
+32        <intent>
+32-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:20:3-23:12
+33            <action android:name="android.intent.action.DIAL" />
+33-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:21:5-57
+33-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:21:13-54
+34
+35            <data android:scheme="tel" />
+35-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+35-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+36        </intent>
+37
+38        <!-- If your app sends emails -->
+39        <intent>
+39-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:26:3-29:12
+40            <action android:name="android.intent.action.SEND" />
+40-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:27:5-57
+40-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:27:13-54
+41
+42            <data android:mimeType="*/*" />
+42-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+43        </intent>
+44        <intent>
+44-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:18
+45            <action android:name="android.support.customtabs.action.CustomTabsService" />
+45-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-90
+45-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:11:21-87
+46        </intent>
+47        <intent>
+47-->[:flutter_downloader] /home/abim/Downloads/mero-school/build/flutter_downloader/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-13:18
+48            <action android:name="android.intent.action.VIEW" />
+48-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:5-57
+48-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:13-54
+49        </intent>
+50
+51        <package android:name="com.facebook.katana" />
+51-->[com.facebook.android:facebook-common:14.1.1] /home/abim/.gradle/caches/transforms-3/c661539d43891e7fe7a0946240db4bda/transformed/jetified-facebook-common-14.1.1/AndroidManifest.xml:30:9-55
+51-->[com.facebook.android:facebook-common:14.1.1] /home/abim/.gradle/caches/transforms-3/c661539d43891e7fe7a0946240db4bda/transformed/jetified-facebook-common-14.1.1/AndroidManifest.xml:30:18-52
+52
+53        <intent>
+53-->[androidx.media:media:1.3.1] /home/abim/.gradle/caches/transforms-3/eb734a0b21e62dd38bf6bb888bfe68de/transformed/media-1.3.1/AndroidManifest.xml:25:9-27:18
+54            <action android:name="android.media.browse.MediaBrowserService" />
+54-->[androidx.media:media:1.3.1] /home/abim/.gradle/caches/transforms-3/eb734a0b21e62dd38bf6bb888bfe68de/transformed/media-1.3.1/AndroidManifest.xml:26:13-79
+54-->[androidx.media:media:1.3.1] /home/abim/.gradle/caches/transforms-3/eb734a0b21e62dd38bf6bb888bfe68de/transformed/media-1.3.1/AndroidManifest.xml:26:21-76
+55        </intent>
+56    </queries>
+57
+58    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+58-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:33:5-81
+58-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:33:22-78
+59    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+59-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:34:5-79
+59-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:34:22-77
+60    <uses-permission android:name="android.permission.WAKE_LOCK" />
+60-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-68
+60-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-65
+61    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+61-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-79
+61-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-76
+62    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+62-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-81
+62-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-78
+63    <uses-permission android:name="android.permission.VIBRATE" />
+63-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-66
+63-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-63
+64    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+64-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:5-81
+64-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:11:22-78
+65    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+65-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:5-79
+65-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:12:22-76
+66    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+66-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-77
+66-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-74
+67    <uses-permission android:name="com.android.vending.BILLING" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+67-->[com.android.billingclient:billing-ktx:4.1.0] /home/abim/.gradle/caches/transforms-3/3fe15495b4258a279059bc762d18ccf2/transformed/jetified-billing-ktx-4.1.0/AndroidManifest.xml:9:5-67
+67-->[com.android.billingclient:billing-ktx:4.1.0] /home/abim/.gradle/caches/transforms-3/3fe15495b4258a279059bc762d18ccf2/transformed/jetified-billing-ktx-4.1.0/AndroidManifest.xml:9:22-64
+68    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+68-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:29:5-82
+68-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:29:22-79
+69    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+69-->[com.google.android.gms:play-services-measurement-api:21.1.1] /home/abim/.gradle/caches/transforms-3/2ad6074825b7554cff10bdf6987e4e45/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:25:5-79
+69-->[com.google.android.gms:play-services-measurement-api:21.1.1] /home/abim/.gradle/caches/transforms-3/2ad6074825b7554cff10bdf6987e4e45/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:25:22-76
+70    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+70-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:26:5-110
+70-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:26:22-107
+71    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- for android -->
+71-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:5-77
+71-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:28:22-74
+72    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+73    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+74    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+75    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+76    <!-- for Samsung -->
+77    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+77-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+77-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+78    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+78-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+78-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+79    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+79-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+79-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+80    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+80-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+80-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+81    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+81-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+81-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+82    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+82-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+82-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+83    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+83-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+83-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+84    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+84-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+84-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+85    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+85-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+85-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+86    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+86-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+86-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+87    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+87-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+87-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+88    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+88-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+88-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+89    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+89-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+89-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+90    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+90-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+90-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+91    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+91-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+91-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+92    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+92-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+92-->[me.leolin:ShortcutBadger:1.1.22] /home/abim/.gradle/caches/transforms-3/9798fa766416b3e63debe4662e8cf6eb/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+93    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS" />
+93-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:11:5-13:47
+93-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:12:9-73
+94
+95    <application
+95-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:35:5-218:19
+96        android:name="school.mero.lms.Application"
+96-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:36:9-36
+97        android:allowBackup="false"
+97-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:37:9-36
+98        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+98-->[androidx.core:core:1.8.0] /home/abim/.gradle/caches/transforms-3/1cb00c82fc30b16d8caa07c671c2041e/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+99        android:debuggable="true"
+100        android:icon="@mipmap/app_launcher"
+100-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:38:9-44
+101        android:label="Mero School"
+101-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:41:9-36
+102        android:requestLegacyExternalStorage="true"
+102-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:39:9-52
+103        android:supportsRtl="true"
+103-->[com.facebook.android:facebook-login:14.1.1] /home/abim/.gradle/caches/transforms-3/b197fa9efe87d0fa826b757fb2cd73dd/transformed/jetified-facebook-login-14.1.1/AndroidManifest.xml:28:18-44
+104        android:usesCleartextTraffic="true" >
+104-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:42:9-44
+105        <activity
+105-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:43:9-47:15
+106            android:name="school.mero.lms.DownloadTestActivity"
+106-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:44:13-49
+107            android:exported="true"
+107-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:45:13-36
+108            android:theme="@style/Theme.AppCompat" />
+108-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:46:13-51
+109        <activity
+109-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:48:9-51:52
+110            android:name="school.mero.lms.live.DownloadActivity"
+110-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:49:13-50
+111            android:exported="false"
+111-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:50:13-37
+112            android:theme="@style/AppThemeLight" />
+112-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:51:13-49
+113        <activity
+113-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:52:9-59:47
+114            android:name="school.mero.lms.research.SingleHlsVideoActivity"
+114-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:53:13-60
+115            android:configChanges="keyboardHidden|orientation|screenSize|screenLayout"
+115-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:54:13-87
+116            android:excludeFromRecents="true"
+116-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:55:13-46
+117            android:exported="true"
+117-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:56:13-36
+118            android:launchMode="singleTask"
+118-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:57:13-44
+119            android:taskAffinity=""
+119-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:58:13-36
+120            android:theme="@style/AppTheme" />
+120-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:59:13-44
+121        <activity
+121-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:60:9-147:20
+122            android:name="school.mero.lms.MainActivity"
+122-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:61:13-41
+123            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+123-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:62:13-163
+124            android:exported="true"
+124-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:63:13-36
+125            android:hardwareAccelerated="true"
+125-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:64:13-47
+126            android:launchMode="singleTop"
+126-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:65:13-43
+127            android:theme="@style/LaunchTheme"
+127-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:66:13-47
+128            android:windowSoftInputMode="adjustResize" >
+128-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:67:13-55
+129
+130            <!--
+131                 Specifies an Android theme to apply to this Activity as soon as
+132                 the Android process has started. This theme is visible to the user
+133                 while the Flutter UI initializes. After that, this theme continues
+134                 to determine the Window background behind the Flutter UI.
+135            -->
+136            <meta-data
+136-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:75:13-77:57
+137                android:name="io.flutter.embedding.android.NormalTheme"
+137-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:76:17-72
+138                android:resource="@style/NormalTheme" />
+138-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:77:17-54
+139            <meta-data
+139-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:79:13-81:69
+140                android:name="com.google.firebase.messaging.default_notification_icon"
+140-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:80:17-87
+141                android:resource="@drawable/ic_notification_icon" />
+141-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:81:17-66
+142
+143            <!--
+144                 Displays an Android View that continues showing the launch screen
+145                 Drawable until Flutter paints its first frame, then this splash
+146                 screen fades out. A splash screen is useful to avoid any visual
+147                 gap between the end of Android's launch screen and the painting of
+148                 Flutter's first frame.
+149            -->
+150            <!-- <meta-data -->
+151            <!-- android:name="io.flutter.embedding.android.SplashScreenDrawable" -->
+152            <!-- android:resource="@drawable/launch_background" /> -->
+153
+154            <intent-filter>
+154-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:94:13-98:29
+155                <action android:name="android.intent.action.MAIN" />
+155-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:95:17-69
+155-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:95:25-66
+156
+157                <category android:name="android.intent.category.LAUNCHER" />
+157-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:97:17-77
+157-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:97:27-74
+158            </intent-filter>
+159            <intent-filter>
+159-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:99:13-115:29
+160
+161                <!-- <action android:name="FLUTTER_NOTIFICATION_CLICK" /> -->
+162                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+162-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:102:17-69
+162-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:102:25-66
+163
+164                <category android:name="android.intent.category.DEFAULT" />
+164-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:17-76
+164-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:27-73
+165                <category android:name="android.intent.category.BROWSABLE" />
+165-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:17-78
+165-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:27-75
+166
+167                <data
+167-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+168                    android:host="demo.mero.school"
+169                    android:scheme="meroschool" />
+169-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+170                <data
+170-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+171                    android:host="mero.school"
+172                    android:scheme="meroschool" />
+172-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+173            </intent-filter>
+174            <intent-filter>
+174-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:117:13-145:29
+175
+176                <!-- <action android:name="FLUTTER_NOTIFICATION_CLICK" /> -->
+177                <action android:name="android.intent.action.VIEW" />
+177-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:5-57
+177-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:13-54
+178
+179                <category android:name="android.intent.category.DEFAULT" />
+179-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:17-76
+179-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:27-73
+180                <category android:name="android.intent.category.BROWSABLE" />
+180-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:17-78
+180-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:27-75
+181
+182                <data
+182-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+183                    android:host="mero.school"
+184                    android:pathPrefix="/home/course"
+185                    android:scheme="https" />
+185-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+186                <data
+186-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+187                    android:host="mero.school"
+188                    android:pathPrefix="/home/course"
+189                    android:scheme="http" />
+189-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+190                <data
+190-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+191                    android:host="share.mero.school"
+192                    android:pathPrefix="/home/course"
+193                    android:scheme="https" />
+193-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+194                <data
+194-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+195                    android:host="share.mero.school"
+196                    android:pathPrefix="/home/course"
+197                    android:scheme="http" />
+197-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+198            </intent-filter>
+199        </activity>
+200        <!--
+201 Don't delete the meta-data below.
+202             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+203        -->
+204        <meta-data
+204-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:152:9-154:33
+205            android:name="flutterEmbedding"
+205-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:153:13-44
+206            android:value="2" />
+206-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:154:13-30
+207        <!-- Facebook Login configuration -->
+208        <meta-data
+208-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:156:9-158:55
+209            android:name="com.facebook.sdk.ApplicationId"
+209-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:157:13-58
+210            android:value="@string/facebook_app_id" />
+210-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:158:13-52
+211        <meta-data
+211-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:160:9-162:59
+212            android:name="com.facebook.sdk.ClientToken"
+212-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:161:12-55
+213            android:value="@string/facebook_client_token" />
+213-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:162:12-57
+214
+215        <activity
+215-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:164:9-169:15
+216            android:name="com.facebook.FacebookActivity"
+216-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:165:13-57
+217            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+217-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:166:13-96
+218            android:exported="true"
+218-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:168:13-36
+219            android:label="@string/app_name"
+219-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:167:13-45
+220            android:theme="@style/com_facebook_activity_theme" />
+220-->[com.facebook.android:facebook-common:14.1.1] /home/abim/.gradle/caches/transforms-3/c661539d43891e7fe7a0946240db4bda/transformed/jetified-facebook-common-14.1.1/AndroidManifest.xml:37:13-63
+221        <activity
+221-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:170:9-181:20
+222            android:name="com.facebook.CustomTabActivity"
+222-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:171:13-58
+223            android:exported="true" >
+223-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:172:13-36
+224            <intent-filter>
+224-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:173:13-180:29
+225                <action android:name="android.intent.action.VIEW" />
+225-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:5-57
+225-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:13-54
+226
+227                <category android:name="android.intent.category.DEFAULT" />
+227-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:17-76
+227-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:27-73
+228                <category android:name="android.intent.category.BROWSABLE" />
+228-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:17-78
+228-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:27-75
+229
+230                <data android:scheme="@string/fb_login_protocol_scheme" />
+230-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+230-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+231            </intent-filter>
+232            <intent-filter>
+232-->[com.facebook.android:facebook-common:14.1.1] /home/abim/.gradle/caches/transforms-3/c661539d43891e7fe7a0946240db4bda/transformed/jetified-facebook-common-14.1.1/AndroidManifest.xml:43:13-52:29
+233                <action android:name="android.intent.action.VIEW" />
+233-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:5-57
+233-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:13-54
+234
+235                <category android:name="android.intent.category.DEFAULT" />
+235-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:17-76
+235-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:27-73
+236                <category android:name="android.intent.category.BROWSABLE" />
+236-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:17-78
+236-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:27-75
+237
+238                <data
+238-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+239                    android:host="cct.school.mero.lms"
+240                    android:scheme="fbconnect" />
+240-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+241            </intent-filter>
+242        </activity>
+243        <activity
+243-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:182:9-194:20
+244            android:name="com.aboutyou.dart_packages.sign_in_with_apple.SignInWithAppleCallback"
+244-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:183:13-97
+245            android:exported="true" >
+245-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:184:13-36
+246            <intent-filter>
+246-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:185:13-193:29
+247                <action android:name="android.intent.action.VIEW" />
+247-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:5-57
+247-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:16:13-54
+248
+249                <category android:name="android.intent.category.DEFAULT" />
+249-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:17-76
+249-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:27-73
+250                <category android:name="android.intent.category.BROWSABLE" />
+250-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:17-78
+250-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:105:27-75
+251
+252                <data android:scheme="signinwithapple" />
+252-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+252-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:11-33
+253                <data android:path="/callback" />
+253-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:17:5-36
+254            </intent-filter>
+255        </activity>
+256
+257        <meta-data
+257-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:196:9-198:34
+258            android:name="com.webengage.sdk.android.environment"
+258-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:197:13-65
+259            android:value="us" />
+259-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:198:13-31
+260
+261        <service
+261-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:200:9-208:19
+262            android:name="school.mero.lms.live.DemoDownloadService"
+262-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:201:13-53
+263            android:exported="false" >
+263-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:202:13-37
+264            <intent-filter>
+264-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:203:13-207:29
+265                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART" />
+265-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:204:17-102
+265-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:204:25-99
+266
+267                <category android:name="android.intent.category.DEFAULT" />
+267-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:17-76
+267-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:27-73
+268            </intent-filter>
+269        </service>
+270        <service
+270-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:210:9-217:19
+271            android:name="school.mero.lms.MyFirebaseMessagingService"
+271-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:211:13-55
+272            android:exported="true" >
+272-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:212:13-36
+273            <intent-filter>
+273-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:214:13-216:29
+274                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+274-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:215:17-77
+274-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:215:25-75
+275            </intent-filter>
+276        </service>
+277        <service
+277-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:14:9-17:72
+278            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+278-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-107
+279            android:exported="false"
+279-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+280            android:permission="android.permission.BIND_JOB_SERVICE" />
+280-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-69
+281        <service
+281-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:18:9-24:19
+282            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+282-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-97
+283            android:exported="false" >
+283-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-37
+284            <intent-filter>
+284-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:214:13-216:29
+285                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+285-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:215:17-77
+285-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:215:25-75
+286            </intent-filter>
+287        </service>
+288
+289        <receiver
+289-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-33:20
+290            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+290-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-98
+291            android:exported="true"
+291-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-36
+292            android:permission="com.google.android.c2dm.permission.SEND" >
+292-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:29:13-73
+293            <intent-filter>
+293-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
+294                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+294-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
+294-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
+295            </intent-filter>
+296        </receiver>
+297
+298        <service
+298-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:9-39:19
+299            android:name="com.google.firebase.components.ComponentDiscoveryService"
+299-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:35:18-89
+300            android:directBootAware="true"
+300-->[com.google.firebase:firebase-common:20.1.2] /home/abim/.gradle/caches/transforms-3/6e79d154a9b6bb5db2917413e834fa82/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:35:13-43
+301            android:exported="false" >
+301-->[com.google.firebase:firebase-inappmessaging-display:20.1.3] /home/abim/.gradle/caches/transforms-3/2212bec3c0333aa0c96f500bb2ae0399/transformed/jetified-firebase-inappmessaging-display-20.1.3/AndroidManifest.xml:25:13-37
+302            <meta-data
+302-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-38:85
+303                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+303-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:37:17-128
+304                android:value="com.google.firebase.components.ComponentRegistrar" />
+304-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:38:17-82
+305            <meta-data
+305-->[:firebase_crashlytics] /home/abim/Downloads/mero-school/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+306                android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar"
+306-->[:firebase_crashlytics] /home/abim/Downloads/mero-school/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-130
+307                android:value="com.google.firebase.components.ComponentRegistrar" />
+307-->[:firebase_crashlytics] /home/abim/Downloads/mero-school/build/firebase_crashlytics/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+308            <meta-data
+308-->[:firebase_dynamic_links] /home/abim/Downloads/mero-school/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-15:85
+309                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
+309-->[:firebase_dynamic_links] /home/abim/Downloads/mero-school/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:14:17-131
+310                android:value="com.google.firebase.components.ComponentRegistrar" />
+310-->[:firebase_dynamic_links] /home/abim/Downloads/mero-school/build/firebase_dynamic_links/intermediates/merged_manifest/debug/AndroidManifest.xml:15:17-82
+311            <meta-data
+311-->[:firebase_analytics] /home/abim/Downloads/mero-school/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:85
+312                android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar"
+312-->[:firebase_analytics] /home/abim/Downloads/mero-school/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-128
+313                android:value="com.google.firebase.components.ComponentRegistrar" />
+313-->[:firebase_analytics] /home/abim/Downloads/mero-school/build/firebase_analytics/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-82
+314            <meta-data
+314-->[:firebase_in_app_messaging] /home/abim/Downloads/mero-school/build/firebase_in_app_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+315                android:name="com.google.firebase.components:io.flutter.plugins.firebase.inappmessaging.FlutterFirebaseAppRegistrar"
+315-->[:firebase_in_app_messaging] /home/abim/Downloads/mero-school/build/firebase_in_app_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-133
+316                android:value="com.google.firebase.components.ComponentRegistrar" />
+316-->[:firebase_in_app_messaging] /home/abim/Downloads/mero-school/build/firebase_in_app_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+317            <meta-data
+317-->[:firebase_core] /home/abim/Downloads/mero-school/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-13:85
+318                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+318-->[:firebase_core] /home/abim/Downloads/mero-school/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:12:17-124
+319                android:value="com.google.firebase.components.ComponentRegistrar" />
+319-->[:firebase_core] /home/abim/Downloads/mero-school/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:13:17-82
+320            <meta-data
+320-->[com.google.firebase:firebase-inappmessaging-display:20.1.3] /home/abim/.gradle/caches/transforms-3/2212bec3c0333aa0c96f500bb2ae0399/transformed/jetified-firebase-inappmessaging-display-20.1.3/AndroidManifest.xml:26:13-28:85
+321                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar"
+321-->[com.google.firebase:firebase-inappmessaging-display:20.1.3] /home/abim/.gradle/caches/transforms-3/2212bec3c0333aa0c96f500bb2ae0399/transformed/jetified-firebase-inappmessaging-display-20.1.3/AndroidManifest.xml:27:17-144
+322                android:value="com.google.firebase.components.ComponentRegistrar" />
+322-->[com.google.firebase:firebase-inappmessaging-display:20.1.3] /home/abim/.gradle/caches/transforms-3/2212bec3c0333aa0c96f500bb2ae0399/transformed/jetified-firebase-inappmessaging-display-20.1.3/AndroidManifest.xml:28:17-82
+323            <meta-data
+323-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:56:13-58:85
+324                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+324-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:57:17-119
+325                android:value="com.google.firebase.components.ComponentRegistrar" />
+325-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:58:17-82
+326            <meta-data
+326-->[com.google.firebase:firebase-dynamic-links:21.0.2] /home/abim/.gradle/caches/transforms-3/c235aa015a49ba32139c2ad0880dac48/transformed/jetified-firebase-dynamic-links-21.0.2/AndroidManifest.xml:27:13-29:85
+327                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar"
+327-->[com.google.firebase:firebase-dynamic-links:21.0.2] /home/abim/.gradle/caches/transforms-3/c235aa015a49ba32139c2ad0880dac48/transformed/jetified-firebase-dynamic-links-21.0.2/AndroidManifest.xml:28:17-133
+328                android:value="com.google.firebase.components.ComponentRegistrar" />
+328-->[com.google.firebase:firebase-dynamic-links:21.0.2] /home/abim/.gradle/caches/transforms-3/c235aa015a49ba32139c2ad0880dac48/transformed/jetified-firebase-dynamic-links-21.0.2/AndroidManifest.xml:29:17-82
+329            <meta-data
+329-->[com.google.firebase:firebase-crashlytics:18.2.13] /home/abim/.gradle/caches/transforms-3/49648cb8cfdf77db7f749a40d5961ddc/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:18:13-20:85
+330                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+330-->[com.google.firebase:firebase-crashlytics:18.2.13] /home/abim/.gradle/caches/transforms-3/49648cb8cfdf77db7f749a40d5961ddc/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:19:17-115
+331                android:value="com.google.firebase.components.ComponentRegistrar" />
+331-->[com.google.firebase:firebase-crashlytics:18.2.13] /home/abim/.gradle/caches/transforms-3/49648cb8cfdf77db7f749a40d5961ddc/transformed/jetified-firebase-crashlytics-18.2.13/AndroidManifest.xml:20:17-82
+332            <meta-data
+332-->[com.google.android.gms:play-services-measurement-api:21.1.1] /home/abim/.gradle/caches/transforms-3/2ad6074825b7554cff10bdf6987e4e45/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:31:13-33:85
+333                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+333-->[com.google.android.gms:play-services-measurement-api:21.1.1] /home/abim/.gradle/caches/transforms-3/2ad6074825b7554cff10bdf6987e4e45/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:32:17-139
+334                android:value="com.google.firebase.components.ComponentRegistrar" />
+334-->[com.google.android.gms:play-services-measurement-api:21.1.1] /home/abim/.gradle/caches/transforms-3/2ad6074825b7554cff10bdf6987e4e45/transformed/jetified-play-services-measurement-api-21.1.1/AndroidManifest.xml:33:17-82
+335            <meta-data
+335-->[com.google.firebase:firebase-inappmessaging:20.1.3] /home/abim/.gradle/caches/transforms-3/8f1ddfffa4c495457ef62609faf1a0cf/transformed/jetified-firebase-inappmessaging-20.1.3/AndroidManifest.xml:17:13-19:85
+336                android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar"
+336-->[com.google.firebase:firebase-inappmessaging:20.1.3] /home/abim/.gradle/caches/transforms-3/8f1ddfffa4c495457ef62609faf1a0cf/transformed/jetified-firebase-inappmessaging-20.1.3/AndroidManifest.xml:18:17-129
+337                android:value="com.google.firebase.components.ComponentRegistrar" />
+337-->[com.google.firebase:firebase-inappmessaging:20.1.3] /home/abim/.gradle/caches/transforms-3/8f1ddfffa4c495457ef62609faf1a0cf/transformed/jetified-firebase-inappmessaging-20.1.3/AndroidManifest.xml:19:17-82
+338            <meta-data
+338-->[com.google.firebase:firebase-datatransport:18.1.6] /home/abim/.gradle/caches/transforms-3/9a85e0f1173a38e6c789c2f30de0d632/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:28:13-30:85
+339                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+339-->[com.google.firebase:firebase-datatransport:18.1.6] /home/abim/.gradle/caches/transforms-3/9a85e0f1173a38e6c789c2f30de0d632/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:29:17-115
+340                android:value="com.google.firebase.components.ComponentRegistrar" />
+340-->[com.google.firebase:firebase-datatransport:18.1.6] /home/abim/.gradle/caches/transforms-3/9a85e0f1173a38e6c789c2f30de0d632/transformed/jetified-firebase-datatransport-18.1.6/AndroidManifest.xml:30:17-82
+341            <meta-data
+341-->[com.google.firebase:firebase-installations:17.0.3] /home/abim/.gradle/caches/transforms-3/cf5bb57eba31b4b7fd8805325e1c7516/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:18:13-20:85
+342                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+342-->[com.google.firebase:firebase-installations:17.0.3] /home/abim/.gradle/caches/transforms-3/cf5bb57eba31b4b7fd8805325e1c7516/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:19:17-127
+343                android:value="com.google.firebase.components.ComponentRegistrar" />
+343-->[com.google.firebase:firebase-installations:17.0.3] /home/abim/.gradle/caches/transforms-3/cf5bb57eba31b4b7fd8805325e1c7516/transformed/jetified-firebase-installations-17.0.3/AndroidManifest.xml:20:17-82
+344            <meta-data
+344-->[com.google.firebase:firebase-abt:21.0.2] /home/abim/.gradle/caches/transforms-3/711d3adf647d41b3708bef22c1f1c092/transformed/jetified-firebase-abt-21.0.2/AndroidManifest.xml:13:13-15:85
+345                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+345-->[com.google.firebase:firebase-abt:21.0.2] /home/abim/.gradle/caches/transforms-3/711d3adf647d41b3708bef22c1f1c092/transformed/jetified-firebase-abt-21.0.2/AndroidManifest.xml:14:17-109
+346                android:value="com.google.firebase.components.ComponentRegistrar" />
+346-->[com.google.firebase:firebase-abt:21.0.2] /home/abim/.gradle/caches/transforms-3/711d3adf647d41b3708bef22c1f1c092/transformed/jetified-firebase-abt-21.0.2/AndroidManifest.xml:15:17-82
+347        </service>
+348
+349        <provider
+349-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:41:9-45:38
+350            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+350-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-102
+351            android:authorities="school.mero.lms.flutterfirebasemessaginginitprovider"
+351-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-88
+352            android:exported="false"
+352-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:44:13-37
+353            android:initOrder="99" />
+353-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:45:13-35
+354
+355        <receiver
+355-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+356            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+356-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-91
+357            android:exported="false" />
+357-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+358        <receiver
+358-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+359            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+359-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-97
+360            android:exported="false" />
+360-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+361        <receiver
+361-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-31:20
+362            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+362-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-101
+363            android:exported="false" >
+363-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+364            <intent-filter>
+364-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-30:29
+365                <action android:name="android.intent.action.BOOT_COMPLETED" />
+365-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+365-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+366                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+366-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+366-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+367                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+367-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+367-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+368                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+368-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+368-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+369            </intent-filter>
+370        </receiver>
+371
+372        <activity
+372-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-20:47
+373            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+373-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-104
+374            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+374-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-137
+375            android:exported="true"
+375-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-36
+376            android:theme="@style/AppTheme" />
+376-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-44
+377        <activity
+377-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-24:55
+378            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+378-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-112
+379            android:exported="true"
+379-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-36
+380            android:theme="@style/ThemeTransparent" />
+380-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-52
+381        <activity
+381-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:25:9-28:55
+382            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+382-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-106
+383            android:exported="true"
+383-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-36
+384            android:theme="@style/ThemeTransparent" />
+384-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-52
+385        <activity
+385-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:29:9-33:55
+386            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+386-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-126
+387            android:exported="true"
+387-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:31:13-36
+388            android:launchMode="singleInstance"
+388-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:32:13-48
+389            android:theme="@style/ThemeTransparent" />
+389-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:33:13-52
+390        <activity
+390-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-38:55
+391            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+391-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-120
+392            android:exported="true"
+392-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-36
+393            android:launchMode="singleInstance"
+393-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-48
+394            android:theme="@style/ThemeTransparent" />
+394-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-52
+395
+396        <receiver
+396-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:40:9-43:40
+397            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+397-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-111
+398            android:enabled="true"
+398-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:42:13-35
+399            android:exported="false" />
+399-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:43:13-37
+400
+401        <meta-data
+401-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:45:9-47:36
+402            android:name="io.flutter.embedded_views_preview"
+402-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:46:13-61
+403            android:value="true" />
+403-->[:flutter_inappwebview] /home/abim/Downloads/mero-school/build/flutter_inappwebview/intermediates/merged_manifest/debug/AndroidManifest.xml:47:13-33
+404
+405        <provider
+405-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+406            android:name="io.flutter.plugins.share.ShareFileProvider"
+406-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-70
+407            android:authorities="school.mero.lms.flutter.share_provider"
+407-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+408            android:exported="false"
+408-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+409            android:grantUriPermissions="true" >
+409-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+410            <meta-data
+410-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:68
+411                android:name="android.support.FILE_PROVIDER_PATHS"
+411-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+412                android:resource="@xml/flutter_share_file_paths" />
+412-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-65
+413        </provider>
+414        <provider
+414-->[:image_picker_android] /home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+415            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+415-->[:image_picker_android] /home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-82
+416            android:authorities="school.mero.lms.flutter.image_provider"
+416-->[:image_picker_android] /home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-74
+417            android:exported="false"
+417-->[:image_picker_android] /home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+418            android:grantUriPermissions="true" >
+418-->[:image_picker_android] /home/abim/Downloads/mero-school/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+419            <meta-data
+419-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:68
+420                android:name="android.support.FILE_PROVIDER_PATHS"
+420-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+421                android:resource="@xml/flutter_image_picker_file_paths" />
+421-->[:share] /home/abim/Downloads/mero-school/build/share/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-65
+422        </provider>
+423
+424        <receiver
+424-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-15:40
+425            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.DismissedNotificationReceiver"
+425-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-121
+426            android:exported="false" />
+426-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-37
+427        <receiver
+427-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-18:40
+428            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.ScheduledNotificationReceiver"
+428-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-121
+429            android:exported="false" />
+429-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-37
+430        <receiver
+430-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:19:9-21:40
+431            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.KeepOnTopActionReceiver"
+431-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-115
+432            android:exported="false" />
+432-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-37
+433        <receiver
+433-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:22:9-35:20
+434            android:name="me.carda.awesome_notifications.notifications.broadcastReceivers.RefreshSchedulesReceiver"
+434-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-116
+435            android:exported="false" >
+435-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+436            <intent-filter>
+436-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-34:29
+437                <category android:name="android.intent.category.DEFAULT" />
+437-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:17-76
+437-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:104:27-73
+438
+439                <action android:name="android.intent.action.BOOT_COMPLETED" />
+439-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+439-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+440                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+440-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-86
+440-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-83
+441                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+441-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-84
+441-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-81
+442                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+442-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-82
+442-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-79
+443                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+443-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-82
+443-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-79
+444                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+444-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:17-107
+444-->[:awesome_notifications] /home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:33:25-104
+445            </intent-filter>
+446        </receiver>
+447
+448        <activity
+448-->[:url_launcher_android] /home/abim/Downloads/mero-school/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-13:74
+449            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+449-->[:url_launcher_android] /home/abim/Downloads/mero-school/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-74
+450            android:exported="false"
+450-->[:url_launcher_android] /home/abim/Downloads/mero-school/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+451            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+451-->[:url_launcher_android] /home/abim/Downloads/mero-school/build/url_launcher_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-71
+452
+453        <uses-library
+453-->[androidx.window:window:1.0.0-beta04] /home/abim/.gradle/caches/transforms-3/43bdcd738026242c14460866d97ca685/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+454            android:name="androidx.window.extensions"
+454-->[androidx.window:window:1.0.0-beta04] /home/abim/.gradle/caches/transforms-3/43bdcd738026242c14460866d97ca685/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+455            android:required="false" />
+455-->[androidx.window:window:1.0.0-beta04] /home/abim/.gradle/caches/transforms-3/43bdcd738026242c14460866d97ca685/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+456        <uses-library
+456-->[androidx.window:window:1.0.0-beta04] /home/abim/.gradle/caches/transforms-3/43bdcd738026242c14460866d97ca685/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+457            android:name="androidx.window.sidecar"
+457-->[androidx.window:window:1.0.0-beta04] /home/abim/.gradle/caches/transforms-3/43bdcd738026242c14460866d97ca685/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+458            android:required="false" />
+458-->[androidx.window:window:1.0.0-beta04] /home/abim/.gradle/caches/transforms-3/43bdcd738026242c14460866d97ca685/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+459
+460        <activity
+460-->[pub.devrel:easypermissions:3.0.0] /home/abim/.gradle/caches/transforms-3/ad36b0a27cb3699e67e05ae1beb051da/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:12:9-16:66
+461            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+461-->[pub.devrel:easypermissions:3.0.0] /home/abim/.gradle/caches/transforms-3/ad36b0a27cb3699e67e05ae1beb051da/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:13:13-86
+462            android:exported="false"
+462-->[pub.devrel:easypermissions:3.0.0] /home/abim/.gradle/caches/transforms-3/ad36b0a27cb3699e67e05ae1beb051da/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:14:13-37
+463            android:label=""
+463-->[pub.devrel:easypermissions:3.0.0] /home/abim/.gradle/caches/transforms-3/ad36b0a27cb3699e67e05ae1beb051da/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:15:13-29
+464            android:theme="@style/EasyPermissions.Transparent" />
+464-->[pub.devrel:easypermissions:3.0.0] /home/abim/.gradle/caches/transforms-3/ad36b0a27cb3699e67e05ae1beb051da/transformed/jetified-easypermissions-3.0.0/AndroidManifest.xml:16:13-63
+465        <activity android:name="com.facebook.CustomTabMainActivity" />
+465-->[com.facebook.android:facebook-common:14.1.1] /home/abim/.gradle/caches/transforms-3/c661539d43891e7fe7a0946240db4bda/transformed/jetified-facebook-common-14.1.1/AndroidManifest.xml:38:9-71
+465-->[com.facebook.android:facebook-common:14.1.1] /home/abim/.gradle/caches/transforms-3/c661539d43891e7fe7a0946240db4bda/transformed/jetified-facebook-common-14.1.1/AndroidManifest.xml:38:19-68
+466        <activity
+466-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:23:9-27:75
+467            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+467-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:24:13-93
+468            android:excludeFromRecents="true"
+468-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:25:13-46
+469            android:exported="false"
+469-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:26:13-37
+470            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+470-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:27:13-72
+471        <!--
+472            Service handling Google Sign-In user revocation. For apps that do not integrate with
+473            Google Sign-In, this service will never be started.
+474        -->
+475        <service
+475-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:33:9-37:51
+476            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+476-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:34:13-89
+477            android:exported="true"
+477-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:35:13-36
+478            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+478-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:36:13-107
+479            android:visibleToInstantApps="true" />
+479-->[com.google.android.gms:play-services-auth:20.0.1] /home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/AndroidManifest.xml:37:13-48
+480
+481        <receiver
+481-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:32:9-39:20
+482            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+482-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:33:13-78
+483            android:exported="true"
+483-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:34:13-36
+484            android:permission="com.google.android.c2dm.permission.SEND" >
+484-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:35:13-73
+485            <intent-filter>
+485-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:29
+486                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+486-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-81
+486-->[:firebase_messaging] /home/abim/Downloads/mero-school/build/firebase_messaging/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-78
+487            </intent-filter>
+488        </receiver>
+489        <!--
+490             FirebaseMessagingService performs security checks at runtime,
+491             but set to not exported to explicitly avoid allowing another app to call it.
+492        -->
+493        <service
+493-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:45:9-52:19
+494            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+494-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:46:13-82
+495            android:directBootAware="true"
+495-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:47:13-43
+496            android:exported="false" >
+496-->[com.google.firebase:firebase-messaging:23.0.8] /home/abim/.gradle/caches/transforms-3/42237e236e3099abc7cf8e9edb455ff4/transformed/jetified-firebase-messaging-23.0.8/AndroidManifest.xml:48:13-37
+497            <intent-filter android:priority="-500" >
+497-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:214:13-216:29
+498                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+498-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:215:17-77
+498-->/home/abim/Downloads/mero-school/android/app/src/main/AndroidManifest.xml:215:25-75
+499            </intent-filter>
+500        </service>
+501
+502        <activity
+502-->[com.google.android.gms:play-services-base:18.0.1] /home/abim/.gradle/caches/transforms-3/e589c6a9050c8ecb8b8a2699955cfaef/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+503            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+503-->[com.google.android.gms:play-services-base:18.0.1] /home/abim/.gradle/caches/transforms-3/e589c6a9050c8ecb8b8a2699955cfaef/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+504            android:exported="false"
+504-->[com.google.android.gms:play-services-base:18.0.1] /home/abim/.gradle/caches/transforms-3/e589c6a9050c8ecb8b8a2699955cfaef/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+505            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+505-->[com.google.android.gms:play-services-base:18.0.1] /home/abim/.gradle/caches/transforms-3/e589c6a9050c8ecb8b8a2699955cfaef/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+506
+507        <provider
+507-->[com.google.firebase:firebase-common:20.1.2] /home/abim/.gradle/caches/transforms-3/6e79d154a9b6bb5db2917413e834fa82/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:26:9-31:39
+508            android:name="com.google.firebase.provider.FirebaseInitProvider"
+508-->[com.google.firebase:firebase-common:20.1.2] /home/abim/.gradle/caches/transforms-3/6e79d154a9b6bb5db2917413e834fa82/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:27:13-77
+509            android:authorities="school.mero.lms.firebaseinitprovider"
+509-->[com.google.firebase:firebase-common:20.1.2] /home/abim/.gradle/caches/transforms-3/6e79d154a9b6bb5db2917413e834fa82/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:28:13-72
+510            android:directBootAware="true"
+510-->[com.google.firebase:firebase-common:20.1.2] /home/abim/.gradle/caches/transforms-3/6e79d154a9b6bb5db2917413e834fa82/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:29:13-43
+511            android:exported="false"
+511-->[com.google.firebase:firebase-common:20.1.2] /home/abim/.gradle/caches/transforms-3/6e79d154a9b6bb5db2917413e834fa82/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:30:13-37
+512            android:initOrder="100" />
+512-->[com.google.firebase:firebase-common:20.1.2] /home/abim/.gradle/caches/transforms-3/6e79d154a9b6bb5db2917413e834fa82/transformed/jetified-firebase-common-20.1.2/AndroidManifest.xml:31:13-36
+513
+514        <receiver
+514-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:29:9-33:20
+515            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+515-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:30:13-85
+516            android:enabled="true"
+516-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:31:13-35
+517            android:exported="false" >
+517-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:32:13-37
+518        </receiver>
+519
+520        <service
+520-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:35:9-38:40
+521            android:name="com.google.android.gms.measurement.AppMeasurementService"
+521-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:36:13-84
+522            android:enabled="true"
+522-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:37:13-35
+523            android:exported="false" />
+523-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:38:13-37
+524        <service
+524-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:39:9-43:72
+525            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+525-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:40:13-87
+526            android:enabled="true"
+526-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:41:13-35
+527            android:exported="false"
+527-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:42:13-37
+528            android:permission="android.permission.BIND_JOB_SERVICE" />
+528-->[com.google.android.gms:play-services-measurement:21.1.1] /home/abim/.gradle/caches/transforms-3/3437c4f9f7c156fdd364bcf7a2dd09dd/transformed/jetified-play-services-measurement-21.1.1/AndroidManifest.xml:43:13-69
+529
+530        <meta-data
+530-->[com.google.android.gms:play-services-basement:18.1.0] /home/abim/.gradle/caches/transforms-3/6d42e3f4e93c8b91b4b7849476fc1428/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+531            android:name="com.google.android.gms.version"
+531-->[com.google.android.gms:play-services-basement:18.1.0] /home/abim/.gradle/caches/transforms-3/6d42e3f4e93c8b91b4b7849476fc1428/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+532            android:value="@integer/google_play_services_version" />
+532-->[com.google.android.gms:play-services-basement:18.1.0] /home/abim/.gradle/caches/transforms-3/6d42e3f4e93c8b91b4b7849476fc1428/transformed/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+533        <!--
+534         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+535         with the application context. This config is merged in with the host app's manifest,
+536         but there can only be one provider with the same authority activated at any given
+537         point; so if the end user has two or more different apps that use Facebook SDK, only the
+538         first one will be able to use the provider. To work around this problem, we use the
+539         following placeholder in the authority to identify each host application as if it was
+540         a completely different provider.
+541        -->
+542        <provider
+542-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:41:9-44:40
+543            android:name="com.facebook.internal.FacebookInitProvider"
+543-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:42:13-70
+544            android:authorities="school.mero.lms.FacebookInitProvider"
+544-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:43:13-72
+545            android:exported="false" />
+545-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:44:13-37
+546
+547        <receiver
+547-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:46:9-52:20
+548            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+548-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:47:13-86
+549            android:exported="false" >
+549-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:48:13-37
+550            <intent-filter>
+550-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:49:13-51:29
+551                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+551-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:50:17-95
+551-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:50:25-92
+552            </intent-filter>
+553        </receiver>
+554        <receiver
+554-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:53:9-59:20
+555            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+555-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:54:13-118
+556            android:exported="false" >
+556-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:55:13-37
+557            <intent-filter>
+557-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:56:13-58:29
+558                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+558-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:57:17-103
+558-->[com.facebook.android:facebook-core:14.1.1] /home/abim/.gradle/caches/transforms-3/eb306ee71c0abd8391a70ffe99d5ad31/transformed/jetified-facebook-core-14.1.1/AndroidManifest.xml:57:25-100
+559            </intent-filter>
+560        </receiver>
+561
+562        <provider
+562-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+563            android:name="androidx.startup.InitializationProvider"
+563-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+564            android:authorities="school.mero.lms.androidx-startup"
+564-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+565            android:exported="false" >
+565-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+566            <meta-data
+566-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+567                android:name="androidx.work.WorkManagerInitializer"
+567-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+568                android:value="androidx.startup" />
+568-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+569            <meta-data
+569-->[androidx.emoji2:emoji2:1.0.0] /home/abim/.gradle/caches/transforms-3/e00820a1238b92ebf7f908b7763da403/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+570                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+570-->[androidx.emoji2:emoji2:1.0.0] /home/abim/.gradle/caches/transforms-3/e00820a1238b92ebf7f908b7763da403/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+571                android:value="androidx.startup" />
+571-->[androidx.emoji2:emoji2:1.0.0] /home/abim/.gradle/caches/transforms-3/e00820a1238b92ebf7f908b7763da403/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+572            <meta-data
+572-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/abim/.gradle/caches/transforms-3/1664f38aaab5caf59e205f9d89ba760e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+573                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+573-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/abim/.gradle/caches/transforms-3/1664f38aaab5caf59e205f9d89ba760e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+574                android:value="androidx.startup" />
+574-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/abim/.gradle/caches/transforms-3/1664f38aaab5caf59e205f9d89ba760e/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+575        </provider>
+576
+577        <service
+577-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+578            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+578-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+579            android:directBootAware="false"
+579-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+580            android:enabled="@bool/enable_system_alarm_service_default"
+580-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+581            android:exported="false" />
+581-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+582        <service
+582-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+583            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+583-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+584            android:directBootAware="false"
+584-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+585            android:enabled="@bool/enable_system_job_service_default"
+585-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+586            android:exported="true"
+586-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+587            android:permission="android.permission.BIND_JOB_SERVICE" />
+587-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+588        <service
+588-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+589            android:name="androidx.work.impl.foreground.SystemForegroundService"
+589-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+590            android:directBootAware="false"
+590-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+591            android:enabled="@bool/enable_system_foreground_service_default"
+591-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+592            android:exported="false" />
+592-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+593
+594        <receiver
+594-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+595            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+595-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+596            android:directBootAware="false"
+596-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+597            android:enabled="true"
+597-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+598            android:exported="false" />
+598-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+599        <receiver
+599-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+600            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+600-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+601            android:directBootAware="false"
+601-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+602            android:enabled="false"
+602-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+603            android:exported="false" >
+603-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+604            <intent-filter>
+604-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+605                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+605-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+605-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+606                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+606-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+606-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+607            </intent-filter>
+608        </receiver>
+609        <receiver
+609-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+610            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+610-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+611            android:directBootAware="false"
+611-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+612            android:enabled="false"
+612-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+613            android:exported="false" >
+613-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+614            <intent-filter>
+614-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+615                <action android:name="android.intent.action.BATTERY_OKAY" />
+615-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+615-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+616                <action android:name="android.intent.action.BATTERY_LOW" />
+616-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+616-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+617            </intent-filter>
+618        </receiver>
+619        <receiver
+619-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+620            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+620-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+621            android:directBootAware="false"
+621-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+622            android:enabled="false"
+622-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+623            android:exported="false" >
+623-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+624            <intent-filter>
+624-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+625                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+625-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+625-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+626                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+626-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+626-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+627            </intent-filter>
+628        </receiver>
+629        <receiver
+629-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+630            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+630-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+631            android:directBootAware="false"
+631-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+632            android:enabled="false"
+632-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+633            android:exported="false" >
+633-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+634            <intent-filter>
+634-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+635                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+635-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+635-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+636            </intent-filter>
+637        </receiver>
+638        <receiver
+638-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+639            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+639-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+640            android:directBootAware="false"
+640-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+641            android:enabled="false"
+641-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+642            android:exported="false" >
+642-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+643            <intent-filter>
+643-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+644                <action android:name="android.intent.action.BOOT_COMPLETED" />
+644-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:17-79
+644-->[:flutter_local_notifications] /home/abim/Downloads/mero-school/build/flutter_local_notifications/intermediates/merged_manifest/debug/AndroidManifest.xml:26:25-76
+645                <action android:name="android.intent.action.TIME_SET" />
+645-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+645-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+646                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+646-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+646-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+647            </intent-filter>
+648        </receiver>
+649        <receiver
+649-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+650            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+650-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+651            android:directBootAware="false"
+651-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+652            android:enabled="@bool/enable_system_alarm_service_default"
+652-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+653            android:exported="false" >
+653-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+654            <intent-filter>
+654-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+655                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+655-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+655-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+656            </intent-filter>
+657        </receiver>
+658        <receiver
+658-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+659            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+659-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+660            android:directBootAware="false"
+660-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+661            android:enabled="true"
+661-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+662            android:exported="true"
+662-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+663            android:permission="android.permission.DUMP" >
+663-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+664            <intent-filter>
+664-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+665                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+665-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+665-->[androidx.work:work-runtime:2.7.1] /home/abim/.gradle/caches/transforms-3/98228acdf14a44b83c4bcf3344f33a62/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+666            </intent-filter>
+667        </receiver>
+668
+669        <service
+669-->[androidx.room:room-runtime:2.3.0] /home/abim/.gradle/caches/transforms-3/e513d89fa0e9a903bcca89decaf435ff/transformed/room-runtime-2.3.0/AndroidManifest.xml:25:9-28:40
+670            android:name="androidx.room.MultiInstanceInvalidationService"
+670-->[androidx.room:room-runtime:2.3.0] /home/abim/.gradle/caches/transforms-3/e513d89fa0e9a903bcca89decaf435ff/transformed/room-runtime-2.3.0/AndroidManifest.xml:26:13-74
+671            android:directBootAware="true"
+671-->[androidx.room:room-runtime:2.3.0] /home/abim/.gradle/caches/transforms-3/e513d89fa0e9a903bcca89decaf435ff/transformed/room-runtime-2.3.0/AndroidManifest.xml:27:13-43
+672            android:exported="false" />
+672-->[androidx.room:room-runtime:2.3.0] /home/abim/.gradle/caches/transforms-3/e513d89fa0e9a903bcca89decaf435ff/transformed/room-runtime-2.3.0/AndroidManifest.xml:28:13-37
+673        <service
+673-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/abim/.gradle/caches/transforms-3/4c32af89dd04dd13ea35fb5a66c5b362/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:29:9-35:19
+674            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+674-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/abim/.gradle/caches/transforms-3/4c32af89dd04dd13ea35fb5a66c5b362/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:30:13-103
+675            android:exported="false" >
+675-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/abim/.gradle/caches/transforms-3/4c32af89dd04dd13ea35fb5a66c5b362/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:31:13-37
+676            <meta-data
+676-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/abim/.gradle/caches/transforms-3/4c32af89dd04dd13ea35fb5a66c5b362/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:32:13-34:39
+677                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+677-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/abim/.gradle/caches/transforms-3/4c32af89dd04dd13ea35fb5a66c5b362/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:33:17-94
+678                android:value="cct" />
+678-->[com.google.android.datatransport:transport-backend-cct:3.1.7] /home/abim/.gradle/caches/transforms-3/4c32af89dd04dd13ea35fb5a66c5b362/transformed/jetified-transport-backend-cct-3.1.7/AndroidManifest.xml:34:17-36
+679        </service>
+680        <service
+680-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/abim/.gradle/caches/transforms-3/e3abc76e228326930f57ffad085e055b/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:26:9-30:19
+681            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+681-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/abim/.gradle/caches/transforms-3/e3abc76e228326930f57ffad085e055b/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:27:13-117
+682            android:exported="false"
+682-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/abim/.gradle/caches/transforms-3/e3abc76e228326930f57ffad085e055b/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:28:13-37
+683            android:permission="android.permission.BIND_JOB_SERVICE" >
+683-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/abim/.gradle/caches/transforms-3/e3abc76e228326930f57ffad085e055b/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:29:13-69
+684        </service>
+685
+686        <receiver
+686-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/abim/.gradle/caches/transforms-3/e3abc76e228326930f57ffad085e055b/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:32:9-34:40
+687            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+687-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/abim/.gradle/caches/transforms-3/e3abc76e228326930f57ffad085e055b/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:33:13-132
+688            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+688-->[com.google.android.datatransport:transport-runtime:3.1.7] /home/abim/.gradle/caches/transforms-3/e3abc76e228326930f57ffad085e055b/transformed/jetified-transport-runtime-3.1.7/AndroidManifest.xml:34:13-37
+689        <activity
+689-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:18:9-24:45
+690            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+690-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:19:13-100
+691            android:enabled="false"
+691-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:20:13-36
+692            android:exported="false"
+692-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:21:13-37
+693            android:launchMode="singleInstance"
+693-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:22:13-48
+694            android:process=":playcore_missing_splits_activity"
+694-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:23:13-64
+695            android:stateNotNeeded="true" />
+695-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:24:13-42
+696        <activity
+696-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:25:9-29:65
+697            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+697-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:26:13-93
+698            android:exported="false"
+698-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:27:13-37
+699            android:stateNotNeeded="true"
+699-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:28:13-42
+700            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+700-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:29:13-62
+701        <service
+701-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:32:9-39:19
+702            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+702-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:33:13-94
+703            android:enabled="false"
+703-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:34:13-36
+704            android:exported="true" >
+704-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:35:13-36
+705            <meta-data
+705-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:36:13-38:41
+706                android:name="com.google.android.play.core.assetpacks.versionCode"
+706-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:37:17-83
+707                android:value="11003" />
+707-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:38:17-38
+708        </service>
+709        <service
+709-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:40:9-43:40
+710            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+710-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:41:13-95
+711            android:enabled="false"
+711-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:42:13-36
+712            android:exported="false" />
+712-->[com.google.android.play:core:1.10.3] /home/abim/.gradle/caches/transforms-3/e7c8dcd17aa5ee8ed95d9d0bc9f9e956/transformed/jetified-core-1.10.3/AndroidManifest.xml:43:13-37
+713        <service android:name="com.webengage.sdk.android.ExecutorService" />
+713-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:18:9-77
+713-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:18:18-74
+714        <service android:name="com.webengage.sdk.android.EventLogService" />
+714-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:19:9-77
+714-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:19:18-74
+715        <service
+715-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:20:9-28:19
+716            android:name="com.webengage.sdk.android.NotificationClickHandlerService"
+716-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:21:13-85
+717            android:exported="false" >
+717-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:22:13-37
+718            <intent-filter>
+718-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:23:13-27:29
+719                <action android:name="com.webengage.sdk.android.intent.ACTION" />
+719-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:24:17-82
+719-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:24:25-79
+720
+721                <category android:name="school.mero.lms" />
+721-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:26:17-61
+721-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:26:27-58
+722            </intent-filter>
+723        </service>
+724
+725        <activity
+725-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:30:9-33:64
+726            android:name="com.webengage.sdk.android.actions.render.WebEngageActivity"
+726-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:31:13-86
+727            android:configChanges="orientation|screenSize"
+727-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:32:13-59
+728            android:theme="@android:style/Theme.Translucent" />
+728-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:33:13-61
+729
+730        <receiver
+730-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:35:9-43:20
+731            android:name="com.webengage.sdk.android.WebEngageReceiver"
+731-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:36:13-71
+732            android:exported="false" >
+732-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:37:13-37
+733            <intent-filter>
+733-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:23:13-27:29
+734                <action android:name="com.webengage.sdk.android.intent.ACTION" />
+734-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:24:17-82
+734-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:24:25-79
+735
+736                <category android:name="school.mero.lms" />
+736-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:26:17-61
+736-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:26:27-58
+737            </intent-filter>
+738        </receiver>
+739
+740        <service
+740-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:45:9-48:19
+741            android:name="com.webengage.sdk.android.WebEngageJobService"
+741-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:46:13-73
+742            android:permission="android.permission.BIND_JOB_SERVICE" >
+742-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:47:13-69
+743        </service>
+744
+745        <activity
+745-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:50:9-54:56
+746            android:name="com.webengage.sdk.android.WETransparentActivity"
+746-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:51:13-75
+747            android:enabled="true"
+747-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:52:13-35
+748            android:excludeFromRecents="true"
+748-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:53:13-46
+749            android:theme="@style/Theme.Transparent" />
+749-->[com.webengage:android-sdk:4.0.0] /home/abim/.gradle/caches/transforms-3/8bbeff50cd78f4525f2f0091f50f6372/transformed/jetified-android-sdk-4.0.0/AndroidManifest.xml:54:13-53
+750
+751        <meta-data
+751-->[com.android.billingclient:billing:5.0.0] /home/abim/.gradle/caches/transforms-3/6c81e19ef60221c40f67b43fd227eaec/transformed/jetified-billing-5.0.0/AndroidManifest.xml:13:9-15:37
+752            android:name="com.google.android.play.billingclient.version"
+752-->[com.android.billingclient:billing:5.0.0] /home/abim/.gradle/caches/transforms-3/6c81e19ef60221c40f67b43fd227eaec/transformed/jetified-billing-5.0.0/AndroidManifest.xml:14:13-73
+753            android:value="5.0.0" />
+753-->[com.android.billingclient:billing:5.0.0] /home/abim/.gradle/caches/transforms-3/6c81e19ef60221c40f67b43fd227eaec/transformed/jetified-billing-5.0.0/AndroidManifest.xml:15:13-34
+754
+755        <activity
+755-->[com.android.billingclient:billing:5.0.0] /home/abim/.gradle/caches/transforms-3/6c81e19ef60221c40f67b43fd227eaec/transformed/jetified-billing-5.0.0/AndroidManifest.xml:17:9-21:75
+756            android:name="com.android.billingclient.api.ProxyBillingActivity"
+756-->[com.android.billingclient:billing:5.0.0] /home/abim/.gradle/caches/transforms-3/6c81e19ef60221c40f67b43fd227eaec/transformed/jetified-billing-5.0.0/AndroidManifest.xml:18:13-78
+757            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+757-->[com.android.billingclient:billing:5.0.0] /home/abim/.gradle/caches/transforms-3/6c81e19ef60221c40f67b43fd227eaec/transformed/jetified-billing-5.0.0/AndroidManifest.xml:19:13-96
+758            android:exported="false"
+758-->[com.android.billingclient:billing:5.0.0] /home/abim/.gradle/caches/transforms-3/6c81e19ef60221c40f67b43fd227eaec/transformed/jetified-billing-5.0.0/AndroidManifest.xml:20:13-37
+759            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+759-->[com.android.billingclient:billing:5.0.0] /home/abim/.gradle/caches/transforms-3/6c81e19ef60221c40f67b43fd227eaec/transformed/jetified-billing-5.0.0/AndroidManifest.xml:21:13-72
+760    </application>
+761
+762</manifest>

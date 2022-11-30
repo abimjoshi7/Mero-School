@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_color">#ffffff</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#6A0002</color>
+
+    <color name="white">#ffffff</color>
+    <color name="darkNavyBlue">#2D4053</color>
+    <color name="lightNavyBlue">#1A2D4053</color>
+
+    <color name="skyBlue">#1c68bf</color>
+    <color name="lightSkyBlue">#221C68BF</color>
+    <color name="grey">#B3BCC1</color>
+    <color name="lightGrey">#dedfe0</color>
+
+    <color name="simmerColor">#dedfe0</color>
+
+    <color name="textColorBlack">#2D4053</color>
+    <color name="textColorGrey">#819595</color>
+    <color name="golden">#FFC107</color>
+    <color name="signInBlue">#1c68bf</color>
+
+    <color name="bottomNavigationCheckedState">#34495E</color>
+    <color name="bottomNavigationPressedState">#34495E</color>
+    <color name="bottomNavigationEnabledState">#34495E</color>
+    <color name="bottomNavigationIdealState">#95A5A6</color>
+
+    <color name="nonVideoLessonBG">#273647</color>
+    <color name="loginViewText">#5C78DE</color>
+
+    <color name="appLogoBlue">#1c68bf</color>
+    <color name="appLogoRed">#6A0002</color>
+    <color name="appLogoRedDark">#330102</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay_dark">#B5000000</color>
+    <color name="color_success">#40C7D6</color>
+    <color name="color_failed">#6A0002</color>
+    <color name="color_pending">#37A9EF</color>
+
+
+    <color name="bg_grey">#f3f3f3</color>
+    <color name="line">#DAEBEBEB</color>
+
+
+    <color name="app_black">#2D4053</color>
+    <color name="dark_grey">#8F8F8F</color>
+
+
+
+
+    <color name="played_color">#ffffff</color>
+    <color name="unplayed_color">#BD354758</color>
+    <color name="buffered_color">#C8F19D9D</color>
+    <color name="back_bg">#BC000000</color>
+
+</resources>

@@ -1,0 +1,7 @@
+#Thu Nov 17 14:11:11 NPT 2022
+base.1=/home/abim/Downloads/mero-school/build/app/intermediates/dex/release/minifyReleaseWithR8/classes2.dex
+path.1=classes2.dex
+base.0=/home/abim/Downloads/mero-school/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_res/release/menu/example_menu2.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/42494bf2e649a438d7a5c2b6ea78cb39/transformed/core-1.7.0/res/menu/example_menu2.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/awesome_notifications/intermediates/merged_res/release/menu/example_menu.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/42494bf2e649a438d7a5c2b6ea78cb39/transformed/core-1.7.0/res/menu/example_menu.xml"
+    }
+]

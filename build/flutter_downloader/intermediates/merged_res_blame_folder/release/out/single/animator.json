@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_downloader/intermediates/merged_res/release/animator/fragment_close_exit.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/6aee12e9914c09210bfb1bbb1a7da93d/transformed/fragment-1.4.1/res/animator/fragment_close_exit.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_downloader/intermediates/merged_res/release/animator/fragment_fade_enter.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/6aee12e9914c09210bfb1bbb1a7da93d/transformed/fragment-1.4.1/res/animator/fragment_fade_enter.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_downloader/intermediates/merged_res/release/animator/fragment_fade_exit.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/6aee12e9914c09210bfb1bbb1a7da93d/transformed/fragment-1.4.1/res/animator/fragment_fade_exit.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_downloader/intermediates/merged_res/release/animator/fragment_close_enter.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/6aee12e9914c09210bfb1bbb1a7da93d/transformed/fragment-1.4.1/res/animator/fragment_close_enter.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_downloader/intermediates/merged_res/release/animator/fragment_open_enter.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/6aee12e9914c09210bfb1bbb1a7da93d/transformed/fragment-1.4.1/res/animator/fragment_open_enter.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/flutter_downloader/intermediates/merged_res/release/animator/fragment_open_exit.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/6aee12e9914c09210bfb1bbb1a7da93d/transformed/fragment-1.4.1/res/animator/fragment_open_exit.xml"
+    }
+]

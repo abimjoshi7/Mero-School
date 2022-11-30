@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/fluttertoast/intermediates/merged_res/release/drawable/notification_icon_background.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/fluttertoast/intermediates/merged_res/release/drawable/toast_bg.xml",
+        "source": "/home/abim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.9/android/src/main/res/drawable/toast_bg.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/fluttertoast/intermediates/merged_res/release/drawable/corner.xml",
+        "source": "/home/abim/snap/flutter/common/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.9/android/src/main/res/drawable/corner.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/fluttertoast/intermediates/merged_res/release/drawable/notification_bg_low.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/fluttertoast/intermediates/merged_res/release/drawable/notification_bg.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/fluttertoast/intermediates/merged_res/release/drawable/notification_tile_bg.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/bfbff8e7b4dc2383d08d7c71f088691b/transformed/core-1.6.0/res/drawable/notification_tile_bg.xml"
+    }
+]

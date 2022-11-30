@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/courseCardViewList"
+
+    app:cardCornerRadius="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:padding="8dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_baseline_play_circle_outline_24"
+                android:tint="@color/dark_grey"
+                tools:ignore="VectorDrawableCompat" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtTitle"
+                    android:text="N/A"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="17dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtSubtitle"
+                    android:text="N/A"
+                    android:textSize="14dp"
+                    android:layout_marginTop="4dp"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDuration"
+                    android:text="00:00"
+                    android:textColor="@color/textColorGrey"
+                    android:textSize="12dp"
+                    android:layout_marginTop="4dp"
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line"
+            android:layout_marginTop="8dp"
+
+            />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="4dp"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_pause"
+                android:id="@+id/icPause"
+                android:padding="8dp"
+                android:tint="@color/dark_grey"
+                />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_play"
+                android:id="@+id/icPlay"
+                android:padding="8dp"
+                android:tint="@color/dark_grey"
+
+                tools:ignore="VectorDrawableCompat" />
+
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_stop_24"
+                android:id="@+id/icStop"
+                android:padding="8dp"
+                android:tint="@color/dark_grey"
+
+                />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_refresh"
+                android:id="@+id/icRefresh"
+                android:padding="8dp"
+                android:tint="@color/dark_grey"
+                android:visibility="gone"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:id="@+id/txtStatus"
+                android:text="N/A"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+
+                android:textColor="@color/dark_grey"
+                android:textSize="14dp"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView
+    >
+
+
+

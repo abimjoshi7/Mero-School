@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/google_sign_in_android/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/google_sign_in_android/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/google_sign_in_android/intermediates/merged_res/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/523e05d182b0bf33571353bc77abce51/transformed/jetified-play-services-auth-20.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]

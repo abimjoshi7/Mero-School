@@ -1,0 +1,192 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('key.properties')
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+
+
+//def keystoreProperties = new Properties()
+//def keystorePropertiesFile = rootProject.file('key.properties')
+//if (keystorePropertiesFile.exists()) {
+//    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+//}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new FileNotFoundException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 33
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    defaultConfig {
+        applicationId "school.mero.lms"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        multiDexEnabled true
+    }
+    signingConfigs {
+        debug {
+            storeFile file('key.jks')
+            storePassword 'google'
+            keyAlias 'androiddebugkey'
+            keyPassword 'google'
+        }
+        release {
+//            debuggable true
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            storeFile file('/home/abim/Downloads/mero-school/android/signingkey')
+            storePassword 'kathmandu'
+            keyAlias 'podamibenepal'
+            keyPassword 'kathmandu'
+
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+//            signingConfig signingConfigs.debug
+            signingConfig signingConfigs.release
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.core:core-ktx:1.7.0'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.google.firebase:firebase-analytics:19.0.0'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.google.android.gms:play-services-basement:17.6.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+
+    compileOnly 'org.checkerframework:checker-qual:3.4.0'
+//    implementation 'com.google.android.exoplayer:exoplayer:2.15.1'
+    //cornet for network exoplayer
+
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.15.1'
+    implementation 'com.google.android.exoplayer:exoplayer:2.14.0'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.14.0'
+    api "com.google.android.gms:play-services-cronet:17.0.0"
+
+
+    //noinspection GradleDependency
+    implementation "androidx.room:room-ktx:2.2.6"
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+
+    implementation "androidx.room:room-runtime:2.3.0"
+    kapt "androidx.room:room-compiler:2.3.0"
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.android.play:core-ktx:1.8.1'
+
+    //lifecycle for mvvm
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
+    implementation 'androidx.work:work-runtime:2.7.0'
+
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
+
+    //seekbar
+    implementation 'com.github.rubensousa:previewseekbar:3.0.0'
+    implementation 'com.github.rubensousa:previewseekbar-exoplayer:2.11.4.0'
+
+
+    //preview image load and cache with glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+
+
+    implementation 'androidx.fragment:fragment-ktx:1.3.6'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+
+    //web engge requrirement
+//    implementation 'com.webengage:android-sdk:3.+'
+//    implementation 'com.google.android.gms:play-services-ads:15.0.1'
+
+    flutter {
+        source '../..'
+    }
+
+//    dependencies {
+//        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//        implementation 'com.android.support:multidex:1.0.3'
+//        implementation 'com.google.firebase:firebase-analytics:19.0.0'
+//        implementation 'com.google.firebase:firebase-messaging:22.0.0'
+//        implementation 'com.google.android.gms:play-services-basement:17.6.0'
+//
+//        //web engge requrirement
+//
+//    }
+
+
+}

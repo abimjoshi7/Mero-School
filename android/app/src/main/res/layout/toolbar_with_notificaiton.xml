@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEFFFF"
+    android:titleTextColor="#424242"
+    android:elevation="2dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/lnrRight"
+            android:layout_centerVertical="true"
+            >
+
+
+            <ImageView
+                android:id="@+id/imgDownloads"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/ic_download"
+                android:visibility="visible"
+                android:padding="4dp"
+                android:layout_marginRight="10dp"
+
+
+                />
+
+
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+
+                >
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/imgNotification"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/ic_notificaiton"
+                    android:visibility="visible"
+                    android:padding="4dp"
+                    />
+
+                <TextView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:id="@+id/txtCount"
+                    android:layout_gravity="bottom|end"
+                    android:textSize="8sp"
+                    android:text="0"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:background="@drawable/bg_circle_blue"
+                    android:visibility="gone"
+                    />
+
+
+
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toLeftOf="@id/lnrRight"
+            android:layout_toStartOf="@id/lnrRight"
+            >
+
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_touch"
+                android:drawableLeft="@drawable/ic_left"
+                android:visibility="visible"
+
+                android:padding="8dp"
+                android:layout_centerVertical="true"
+
+
+                android:onClick="handleBackButton"/>
+
+            <ImageView
+                android:id="@+id/applicationLogo"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:scaleType="fitCenter"
+                android:transitionName="logs"
+                android:layout_toRightOf="@id/backButton"
+                android:src="@drawable/mero_school_logo" />
+
+            <Button
+                android:id="@+id/showSearchBarButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@null"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:drawableRight="@drawable/ic_search"
+                android:layout_marginRight="10dp"
+                android:onClick="showSearchBox"/>
+
+            <Button
+                android:id="@+id/hideSearchBarButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@null"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/ic_close"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+
+                android:onClick="hideSearchBox"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/searchStringInputField"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:textColorHighlight="@color/textColorGrey"
+                android:backgroundTint="@color/grey"
+                android:singleLine="true"
+                android:layout_centerVertical="true"
+                android:hint="Search for courses"
+                android:textCursorDrawable = "@null"
+                android:visibility="gone"
+                android:imeOptions="actionSearch"
+                android:inputType="text"/>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.appcompat.widget.Toolbar>

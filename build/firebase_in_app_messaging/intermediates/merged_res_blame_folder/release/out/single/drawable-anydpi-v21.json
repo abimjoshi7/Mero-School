@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/firebase_in_app_messaging/intermediates/merged_res/release/drawable-anydpi-v21/btn_clear.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/2212bec3c0333aa0c96f500bb2ae0399/transformed/jetified-firebase-inappmessaging-display-20.1.3/res/drawable-anydpi-v21/btn_clear.xml"
+    },
+    {
+        "merged": "/home/abim/Downloads/mero-school/build/firebase_in_app_messaging/intermediates/merged_res/release/drawable-anydpi-v21/image_placeholder.xml",
+        "source": "/home/abim/.gradle/caches/transforms-3/2212bec3c0333aa0c96f500bb2ae0399/transformed/jetified-firebase-inappmessaging-display-20.1.3/res/drawable-anydpi-v21/image_placeholder.xml"
+    }
+]
